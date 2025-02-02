@@ -2,7 +2,11 @@
   <div>
     <div>Slider</div>
     <div>Activity</div>
-
+    <ul>
+      <li v-for="{ article, index } in news">
+        {{ article.title }}
+      </li>
+    </ul>
     <article>
       <ContentDoc :head="false" path="purpose" />
     </article>
@@ -25,7 +29,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const news = queryContent("news").find();
+console.log(news);
+</script>
 
 <style lang="scss">
 body {
