@@ -2,11 +2,27 @@
   <div>
     <div>Slider</div>
     <div>Activity</div>
+
     <ul>
-      <li v-for="{ article, index } in news">
-        {{ article.title }}
+      <li v-for="(article, index) in news" :key="index">
+        <div class="news-box">
+          <div>
+            <span class="news-date">{{ formatDate(article.releaseDate) }}</span>
+          </div>
+          <div>
+            <div v-if="article.eventDate" class="event-date">
+              <span class="event-date-text">開催日</span>
+              {{ formatDate(article.eventDate) }}
+            </div>
+            <span>{{ article.title }}</span>
+            <nuxt-link :to="article._path" class="news-link">
+              詳細を見る
+            </nuxt-link>
+          </div>
+        </div>
       </li>
     </ul>
+
     <article>
       <ContentDoc :head="false" path="purpose" />
     </article>
@@ -30,7 +46,7 @@
 </template>
 
 <script setup>
-const news = queryContent("news").find();
+const news = await queryContent("/news").find();
 console.log(news);
 </script>
 

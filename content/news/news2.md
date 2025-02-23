@@ -14,3 +14,9 @@ eventDate: 2024-09-17
 今回、防窮に関しては、自治体と協働していく日本初の取り組みとなり、今後全国の自治体から要望があれば、富士見市での経験を生かした連携を視野に入れています。
 
 参考リンク：[富士見市のホームページに掲載された締結式](https://www.city.fujimi.saitama.jp/kenko_fukushi_iryo/03fukushi/chiiki/boukyuukyoutei.html)
+
+![](/image/240917-1.jpg)
+
+![](/image/240917-2.jpg)
+
+![](/image/240917-3.jpg)
