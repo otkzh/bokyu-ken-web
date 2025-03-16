@@ -27,8 +27,7 @@
       <ContentDoc :head="false" path="purpose" />
     </article>
     <article>
-      <h2>Project</h2>
-      <a href="project"> プロジェクト</a>
+      <ContentDoc :head="false" path="project" />
     </article>
     <article>
       <ContentDoc :head="false" path="organization" />
@@ -46,7 +45,8 @@
 </template>
 
 <script setup>
-const news = await queryContent("/news").find();
+// newsはreleaseDate新しい順にソートする
+const news = await queryContent("/news").sort({ releaseDate: -1 }).find();
 console.log(news);
 </script>
 
