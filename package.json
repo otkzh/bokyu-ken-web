@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.13.4",
+    "@vercel/edge": "^1.2.1",
     "nuxt": "^3.15.0",
     "vue": "latest",
     "vue-router": "latest"
