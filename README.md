@@ -2,6 +2,13 @@
 
 <https://hackmd.io/xncuHxpnSFu36SWea_L6dQ>
 
-vercel
+元サイト
+<https://www.poverty-prevention.net/>
+
+テスト環境
 <https://bokyu-ken-web.vercel.app/>
-demo / bkk
+
+user:demo
+pass:bkk
+
+vercelブランチにマージしてデプロイ
