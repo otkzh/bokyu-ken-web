@@ -1,8 +1,7 @@
 <template>
   <div>
-    <div>Slider</div>
-    <div>Activity</div>
-
+    <TopSlider />
+    <h2 id="news">Activity</h2>
     <ul>
       <li v-for="(article, index) in news" :key="index">
         <div class="news-box">
@@ -14,9 +13,8 @@
               <span class="event-date-text">開催日</span>
               {{ formatDate(article.eventDate) }}
             </div>
-            <span>{{ article.title }}</span>
             <nuxt-link :to="article._path" class="news-link">
-              詳細を見る
+              <span>{{ article.title }}</span>
             </nuxt-link>
           </div>
         </div>
@@ -81,5 +79,48 @@ a {
 // 偶数番目のarticle要素に背景色を付ける
 article:nth-child(odd) {
   background-color: rgba(241, 225, 221, 1);
+}
+/**
+   * News
+   */
+#news + ul {
+  list-style-type: none;
+  padding: 0 8px;
+
+  .news-box {
+    display: flex;
+  }
+  .news-date {
+    margin-right: 8px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .event-date {
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 4px;
+
+    &-text {
+      color: #000;
+      background-color: white;
+      border: 1px solid #000;
+      border-radius: 4px;
+      padding: 2px;
+    }
+  }
+
+  .news-link {
+    text-decoration: none;
+  }
+
+  .news-report {
+    font-size: 16px;
+    color: white;
+    background-color: rgb(83, 139, 0);
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 2px;
+  }
 }
 </style>
