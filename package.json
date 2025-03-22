@@ -17,6 +17,8 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "embla-carousel-autoplay": "^8.5.2",
+    "embla-carousel-vue": "^8.5.2",
     "sass-embedded": "^1.83.0"
   }
 }

@@ -1,6 +1,7 @@
 <template>
   <div>
     <div>Slider</div>
+    <TopSlider />
     <div>Activity</div>
 
     <ul>
