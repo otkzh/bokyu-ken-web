@@ -15,8 +15,8 @@ eventDate: 2024-09-17
 
 参考リンク：[富士見市のホームページに掲載された締結式](https://www.city.fujimi.saitama.jp/kenko_fukushi_iryo/03fukushi/chiiki/boukyuukyoutei.html)
 
-![](/image/240917-1.jpg)
+![](/image/240917-1.jpg?half)
 
-![](/image/240917-2.jpg)
+![](/image/240917-2.jpg?half)
 
-![](/image/240917-3.jpg)
+![](/image/240917-3.jpg?half)
