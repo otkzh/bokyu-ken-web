@@ -19,6 +19,8 @@ const imageClass = computed(() => {
       return "one-third";
     case "thumbnail":
       return "thumbnail";
+    case "logo-center":
+      return "logo-center";
     default:
       return "full-width";
   }
@@ -54,6 +56,12 @@ const cleanSrc = computed(() => props.src.split("?")[0]);
   object-fit: cover;
 }
 
+.logo-center {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+}
+
 /* 画像が並んだ時の調整 */
 .half-width:nth-child(2n),
 .one-third:nth-child(3n) {
@@ -62,8 +70,7 @@ const cleanSrc = computed(() => props.src.split("?")[0]);
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
-  .half-width,
-  .one-third {
+  .half-width {
     width: 100%;
     margin-right: 0;
   }

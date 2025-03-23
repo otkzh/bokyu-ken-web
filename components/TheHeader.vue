@@ -23,7 +23,7 @@
     flex-direction: column;
   }
   &__title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: normal;
     text-align: left;
     margin: 0;
@@ -38,12 +38,29 @@
   &__wrapper {
     display: flex;
     padding: 4px;
+    flex-wrap: wrap;
   }
   &__logo {
     &-image {
       display: flex;
       align-items: center;
-      width: 142px;
+      width: 80px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__title {
+      font-size: 2rem;
+    }
+    &__subtitle {
+      font-size: 1.5rem;
+    }
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__logo {
+      margin-bottom: 8px;
     }
   }
 }

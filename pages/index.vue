@@ -55,7 +55,12 @@ body {
   line-height: 1.6;
   color: #333;
   margin: 0;
-  padding: 0 80px;
+  padding: 0 24px;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 0 8px;
+  }
 }
 h2 {
   font-family: "M PLUS Rounded 1c";
@@ -121,6 +126,87 @@ article:nth-child(odd) {
     border: 1px solid white;
     border-radius: 4px;
     padding: 2px;
+  }
+}
+// リストのスタイル
+ul {
+  list-style: none;
+  padding: 4px 0;
+  margin: 0;
+
+  li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    // border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    ul {
+      padding-left: 15px;
+      margin-top: 8px;
+
+      li {
+        box-shadow: none;
+        background-color: transparent;
+        padding: 4px 0;
+        font-size: 14px;
+        border-bottom: 1px dashed #ddd;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+// Member
+.prose img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.prose ul {
+  list-style: none;
+  padding: 0;
+}
+
+.prose ul li {
+  margin-bottom: 4px;
+}
+
+.prose h2 {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.member-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.member-details {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .member-block {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .member-block img {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
   }
 }
 </style>
