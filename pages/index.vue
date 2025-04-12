@@ -34,7 +34,7 @@
       <ContentDoc :head="false" path="history" />
     </article>
     <article>
-      <ContentDoc :head="false" path="member" />
+      <ContentDoc :head="false" path="member" class="member"/>
     </article>
     <article>
       <ContentDoc :head="false" path="partners" />
@@ -185,28 +185,64 @@ ul {
   padding-bottom: 0.5rem;
 }
 
-.member-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
-  text-align: center;
-}
+.member {
+// ul>liをflexで3列に並べる
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; // 左詰めに変更
+    margin: 0 -8px;
 
-.member-details {
-  margin-top: 0.5rem;
-}
+    li {
+        width: calc(33.333% - 16px);
+        margin: 0 8px 16px;
+        box-sizing: border-box;
 
-@media (min-width: 768px) {
-  .member-block {
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: left;
-  }
+        // スマホの場合は2列にする
+        @media (max-width: 768px) {
+            width: calc(50% - 16px);
+            margin: 0 8px 16px;
+        }
 
-  .member-block img {
-    margin-right: 1.5rem;
-    margin-bottom: 0;
+        // 最後の要素の右余白を削除
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        @media (max-width: 768px) {
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      // liの中のulは1列にする
+      ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+
+        li {
+          width: 100%;
+          margin-bottom: 4px;
+          font-size: 14px;
+          border-bottom: none;
+          padding: 0;
+          &:first-child {
+            font-weight: bold;
+            font-size: 16px;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
   }
 }
 </style>
