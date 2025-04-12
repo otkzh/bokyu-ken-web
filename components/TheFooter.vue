@@ -4,14 +4,14 @@
       <h3 class="footer__title">連絡先</h3>
       <p class="footer__text">研究所 所長: 白取 耕一郎（Koichiro Shiratori）</p>
       <p class="footer__text">
-        住所: 〒603-8143 京都府京都市北区小山上総町 大谷大学内 白取研究室
+        住所: 〒112-8585　東京都文京区小日向3-4-14　拓殖大学内　白取研究室
       </p>
       <p class="footer__text">
-        Shiratori Laboratory, Otani University, Koyama Kamifusa-cho, Kita-ku,
-        Kyoto 603-8143, Japan
+        Shiratori Laboratory, Takushoku University, 4-14 Kohinata3-Chome, Bunkyo-ku,
+        Tokyo 112-8585, Japan
       </p>
       <p class="footer__text">
-        本部は大谷大学社会学部の白取研究室に設置、防窮研究に関して関西を中心に若手研究者や地方自治体関係者に各種社会法人と一緒に、大谷大学の学生も交えて調査・研究活動を行っています。
+        本部は白取研究室に設置、防窮研究に関して若手研究者や地方自治体関係者に各種社会法人と一緒に、学生も交えて調査・研究活動を行っています。
       </p>
       <p class="footer__text">
         メールアドレス:
