@@ -11,4 +11,4 @@
 user:demo
 pass:bkk
 
-vercelブランチにマージしてデプロイ
+vercelブランチにマージしてデプロイ（太田だけ？）
