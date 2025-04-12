@@ -12,4 +12,3 @@ user:demo
 pass:bkk
 
 vercelブランチにマージしてデプロイ
-
