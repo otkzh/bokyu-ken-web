@@ -1,6 +1,9 @@
 export default defineNuxtConfig({
   modules: ["@nuxt/content"],
-
+  ssr: false,
+  nitro: {
+    preset: 'static',
+  },
   content: {
     // https://content.nuxtjs.org/api/configuration
   },
