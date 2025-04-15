@@ -2,7 +2,10 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content"],
   ssr: true,
   nitro: {
-    preset: 'static'
+    preset: 'static',
+    output: {
+      dir: 'dist'  // Cloudflare が標準で探すディレクトリに合わせる
+    },
   },
 
   content: {
