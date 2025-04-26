@@ -1,0 +1,31 @@
+name: deploy
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+      - name: Use Node.js based on .node-version
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".node-version"
+      - name: Install NPM packages
+        run: yarn install
+      - name: Build website
+        run: yarn generate
+      - name: deploy-to-github-pages
+        uses: peaceiris/actions-gh-pages@v4
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
