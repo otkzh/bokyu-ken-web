@@ -8,6 +8,7 @@
         <h1 class="header__title">一般社団法人 防窮研究所</h1>
         <h2 class="header__subtitle">Institute of Poverty Prevention</h2>
       </div>
+      <a href="https://forms.gle/gcBYv374vTtaQBPP8" target="_blank" class="contact-button">お問い合わせ</a>
     </div>
   </header>
 </template>
@@ -63,5 +64,19 @@
       margin-bottom: 8px;
     }
   }
+
+  // Contact button styles
+  .contact-button {
+  padding: 8px 16px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 }
 </style>
