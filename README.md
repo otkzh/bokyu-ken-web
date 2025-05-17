@@ -4,12 +4,3 @@
 
 元サイト
 <https://www.poverty-prevention.net/>
-
-テスト環境
-<https://bokyu-ken-web.vercel.app/>
-
-user:demo
-pass:bkk
-
-vercelブランチにマージしてデプロイ（太田だけ？）
-
